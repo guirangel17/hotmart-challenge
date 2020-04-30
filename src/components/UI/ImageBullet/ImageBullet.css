@@ -1,0 +1,43 @@
+.bullet {
+	width: 150px;
+	height: 150px;
+	margin: 0 8px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-radius: 100%;
+	overflow: hidden;
+	background: linear-gradient(45deg, rgba(240, 78, 35, 0.4) 0%, rgba(240, 78, 35) 100%);
+}
+
+.bullet img {
+	height: 100%;
+	width: 100%;
+}
+
+.bullet__wrapper {
+	height: 140px;
+	width: 140px;
+	border-radius: 100%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.name {
+	font-family: 'Nunito Sans';
+	font-size: 2em;
+	font-style: italic;
+	font-weight: bold;
+	border-bottom: 4px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient( to right, rgba(240, 78, 35, 0.4), rgba(240, 78, 35));
+	line-height: 15px;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.description {
+	font-family: 'Open Sans';
+	font-weight: 500;
+	width: 180px;
+}

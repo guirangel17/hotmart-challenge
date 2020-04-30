@@ -1,0 +1,267 @@
+.header {
+	height: 100%;
+}
+
+.header__banner {
+	background-image: linear-gradient( rgba(240, 78, 35, 0.4), rgba(240, 78, 35)), url(../../assets/images//1st-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-between;
+	position: relative;
+	height: 50vh;
+	transition: background-color 1s;
+}
+
+.content__container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.header__banner__content {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	justify-content: space-around;
+	height: 100%;
+	padding: 70px 0 50px 0;
+}
+
+.hotmart-talks-picture {
+	width: 50%;
+}
+
+.header__biggest-text {
+	color: #fff;
+	font-size: 4em;
+	font-weight: bold;
+	margin: 0;
+	width: 350px;
+	font-style: italic;
+	font-family: 'Nunito Sans';
+	line-height: 1.2em;
+}
+
+.header__smallest-text {
+	color: #fff;
+	font-size: 1.2em;
+	margin: 0;
+	width: 350px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 8px 0;
+}
+
+.header__date-text {
+	color: #fff;
+	font-size: 3em;
+	margin: 0;
+	font-style: italic;
+	font-weight: bold;
+	font-family: 'Nunito Sans';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.header__place-text {
+	color: #fff;
+	font-size: 1.8em;
+	margin: 0;
+	font-family: 'Nunito Sans';
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.header__information {
+	height: 50vh;
+	background-color:  rgba(240, 78, 35);	
+}
+
+.header__information:before {
+	content: '';
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	border-top: 1px solid #FF8E3B;
+}
+
+.header__madrid__container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header__madrid__line:before {
+	content: '';
+	position: absolute;
+	width: 10%;
+	border-top: 1px solid #FF8E3B;
+}
+
+.header__madrid__1st__line:before {
+	left: 35%;
+}
+
+.header__madrid__2nd__line:before {
+	right: 35%;
+}
+
+.header__information__content  {
+	display: flex;
+	justify-content: space-around;
+	padding: 60px 0;
+}
+
+.header__smallest-text__container {
+	margin-top: 80px;
+}
+
+.button__container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+  .content__container {
+		width: 85%;
+		margin: 0 auto;
+  }
+
+	.header__information__content {
+		flex-direction: column;
+	}
+
+	.header__banner {
+		height: auto;
+	}
+
+	.header__biggest-text {
+		width: 100%;
+	}
+
+	.header__smallest-text__container {
+		margin-top: 20px;
+	}
+
+	.header__smallest-text {
+		width: 100%;
+	}
+
+	.header__information {
+		height: auto;
+	}
+
+	.header__banner__content {
+		padding: 40px 0 50px 0;
+	}
+
+	.hotmart-talks-picture {
+		width: 100%;
+	}
+
+	.button__container {
+    width: 70%;
+    text-align: center;
+	}
+
+	.header__date-text {
+		margin-top: 50px;
+	}
+
+	.header__place-text {
+		font-size: 1.2em;
+		margin-top: 5px;
+	}
+
+	.header__madrid__1st__line:before {
+		left: 27%;
+	}
+	
+	.header__madrid__2nd__line:before {
+		right: 27%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+	.hotmart-talks-picture {
+		width: 90%;
+	}
+
+	.content__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.header__information__content {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	.header__biggest-text {
+		width: 450px;
+	}
+
+	.header__smallest-text {
+		width: 450px;
+	}
+
+	.header__smallest-text__container {
+		margin-top: 30px;
+  }
+  
+  .header__information {
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.hotmart-talks-picture {
+		width: 80%;
+	}
+
+	.content__container {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.header__madrid__1st__line:before {
+		left: 30%;
+	}
+	
+	.header__madrid__2nd__line:before {
+		right: 24%;
+	}
+
+	.header__banner__content {
+		padding: 100px 0 80px 0;
+	}
+
+	.header__information {
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1100px) {
+	.header__information {
+		height: auto;
+	}
+
+	.hotmart-talks-picture {
+		width: 70%;
+  }
+  
+  .content__container {
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+

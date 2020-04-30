@@ -1,0 +1,17 @@
+.lecturers {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 40px 0px;
+}
+
+@media screen and (max-width: 600px) {
+	.content__container {
+		width: 85%;
+		margin: 0 auto;
+  }
+
+  .lecturers {
+		flex-direction: column;
+		align-items: center;
+	}
+}
